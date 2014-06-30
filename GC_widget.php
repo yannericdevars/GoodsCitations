@@ -127,7 +127,7 @@ class GoodsCitations extends WP_Widget {
         $aCitations = $this->getCitations();
 
         $autor = $aCitations[array_rand($aCitations)];
-        return '" ' . $autor->getTexte() . ' "' . "<br/><b>&nbsp;&nbsp;&nbsp;" . $autor->getName() . "</b>";
+        return '" ' . $autor->getTexte() . ' "' . '<br/><div align="right"><b>' . $autor->getName() . '</b></div>';
     }
 
 	/**
