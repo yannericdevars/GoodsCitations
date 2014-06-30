@@ -50,8 +50,8 @@ class GoodsCitations extends WP_Widget {
 	 */
 	function __construct() {
 		parent::__construct(
-			'foo_widget', // Base ID
-			__('Citations', 'text_domain'), // Name
+			'citations_widget', // Base ID
+                __('Citations', 'text_domain'), // Name
 			array( 'description' => __( 'Citations d\'hommes célèbres', 'text_domain' ), ) // Args
 		);
 	}
