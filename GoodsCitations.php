@@ -4,10 +4,9 @@
  */
 /*
 Plugin Name: GoodsCitations
-Plugin URI: http://akismet.com/
 Description: Les citations les meilleures proviennent d'hommes décédés ... Heureusement la relève est là
 Version: 1.0
-Author: yann-eric
+Author: yann-eric Devars
 License: GPLv2 or later
 Text Domain: GoodsCitations
 */
