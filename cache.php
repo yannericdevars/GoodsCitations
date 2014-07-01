@@ -1,15 +1,27 @@
 <?php
 // On soustrait du timestamp actuel celui de la dernière modification pour obtenir le nombre de secondes écoulées depuis la dernière modification
-$modif_ago = time() - filemtime('livre_or.cache');
 
-if($modif_ago > 5) { // SI le fichier a été modifié il y a plus de 5 secondes
+$fileName = __FILE__.".cache";
+$cleanFileName = str_replace("/", "", $fileName);
+
+$fileName = "cache/".$cleanFileName;
+
+
+if (file_exists($fileName)) {
+$modif_ago = time() - filemtime($fileName);
+ } else {
+        $modif_ago = 100000;
+}
+
+
+if($modif_ago > 5) { // SI le fichier a été modifié il y a plus d'une minute
 
         // On crée notre code xHTML
 
  $xHTML = "<strong>".time()."</strong>";
         // On enregistre notre code dans le fichier...
                 // On va commencer par ouvrir le fichier en w+
-                $fichier = fopen('livre_or.cache', 'w+');
+                $fichier = fopen($fileName, 'w+');
                 /* Rappel : l'option w+ ne nécessite pas le replacement du pointeur
                 ni l'effacement du fichier. */
 
@@ -21,7 +33,7 @@ if($modif_ago > 5) { // SI le fichier a été modifié il y a plus de 5 secondes
 }
 
 // On récupère le contenu de notre fichier
-$message_aleatoire = file_get_contents('livre_or.cache');
+$message_aleatoire = file_get_contents($fileName);
 // On l'affiche
 echo $message_aleatoire;
 ?>
