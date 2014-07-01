@@ -22,9 +22,9 @@ Les citations les meilleures proviennent d'hommes décédés ... Heureusement la
 1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
 
 For webservice use :
-Modify .htaccess to rewrite web adress and simplify 
+Modify .htaccess to rewrite web adress and simplify access 
 
-access RewriteRule ^ws$ /website_name/wp-content/plugins/GoodsCitations/ws/ [L]
+RewriteRule ^ws$ /website_name/wp-content/plugins/GoodsCitations/ws/ [L]
 
 == Frequently asked questions ==
 
