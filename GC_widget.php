@@ -43,10 +43,8 @@ class GoodsCitations extends WP_Widget {
      */
     public function citations()
     {
-        $aCitations = Sources::getCitations();
-
-        $autor = $aCitations[array_rand($aCitations)];
-        return '" ' . $autor->getTexte() . ' "' . '<br/><div align="right"><b>' . $autor->getName() . '</b></div>';
+        $oCitation = Sources::getOneCitation();
+        return '" ' . $oCitation->getTexte() . ' "' . '<br/><div align="right"><b>' . $oCitation->getName() . '</b></div>';
     }
 
 	/**

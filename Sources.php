@@ -3,7 +3,7 @@
 class Sources
 {
 
-    public static function getCitations()
+    private static function getCitations()
     {
 
         $autors = array();
@@ -41,6 +41,13 @@ class Sources
         }
 
         return $autors;
+    }
+
+    public static function getOneCitation()
+    {
+        $aCitations = self::getCitations();
+
+        return $aCitations[array_rand($aCitations)];
     }
 
 }
