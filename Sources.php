@@ -37,6 +37,7 @@ class Sources
         $aVanDamme[] = "J'adore les cacahuetes. Tu bois une biere et tu en as marre du gout. Alors tu manges des cacahuetes. Les cacahuetes c'est doux et salé, fort et tendre,comme une femme. Manger des cacahuetes, it's a really strong feeling. Et apres tu as de nouveau envie de boire de la bière. Les cacahuetes c'est le mouvement perpétuel à la portée de l'homme ";
         $aVanDamme[] = "Je suis fasciné par l'air. Si on enlevait l'air du ciel, tous les oiseaux tomberaient par terre....Et les avions aussi.... En meme temps l'air tu peux pas le toucher...ca existe et ca existe pas...Ca nourrit l'homme sans qu'il ait faim...It's magic...L'air c'est beau en meme temps tu peux pas le voir, c'est doux et tu peux pas le toucher.....L'air c'est un peu comme mon cerveau...";
         $aVanDamme[] = "Moi, Adam et Ève, j'y crois plus tu vois, parce que je suis pas un idiot : la pomme, ça peut pas être mauvais, c'est plein de pectine...";
+        $aVanDamme[] = "A l'an 3000 les gens vont se parler avec,..., les yeux, des ondes. Ne me prend pas pour un fou les baleines le font, les dauphins aussi. Ce sont des animaux très intelligents dans la mer. Nous on vit dans la terre. Et eux se communiquent, vu qu'ils ne savent pas parler dans l'eau, ils sont forcés d'utiliser des ondes, des ondes de love ou de hate et la communication se fait comme ca.";
         foreach ($aVanDamme as $value) {
             $autor = new Autor("VanDamme", $value);
             $autors[] = $autor;
