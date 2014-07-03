@@ -18,6 +18,8 @@ class Sources
         $aRibery[] = "Maintenant il faudra faire avec sans Zizou";
         $aRibery[] = "J'ai couru jusqu'à quand ce que je pouvais";
         $aRibery[] = "Je suis un mec simple, y'a pas plus compliqué que moi !";
+        $aRibery[] = "Arrêtez de vous battez !";
+        $aRibery[] = "J’espère que la routourne va vite tourner.";
 
         foreach ($aRibery as $value) {
             $autor = new Autor("Ribery", $value);
